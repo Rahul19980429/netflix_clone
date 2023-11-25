@@ -389,6 +389,9 @@ small devices */
     padding-right: 0;
     font-size: 1.2rem;
   }
+  .right video {
+   right: 8%;
+  }
   .accordionSection span {
     text-align: center;
     font-size: 18px;
