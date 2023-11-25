@@ -385,6 +385,9 @@ small devices */
   .emailSection .getStartBtn {
     width: 80%;
   }
+  .left p{
+    padding-right: 0;
+  }
   .accordionSection span {
     text-align: center;
     font-size: 18px;
