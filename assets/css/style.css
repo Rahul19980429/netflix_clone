@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,400;0,9..40,600;1,9..40,500&family=Poppins:wght@400;500&display=swap");
 
-/* :root{
-    fontColor:#fff;
-} */
+
 
 * {
   padding: 0;
@@ -73,13 +71,13 @@ body {
   outline-offset: 1px;
 }
 .langBtn::before {
-  content: url(assets/svgs/lang.svg);
+  content: url(/assets/svgs/lang.svg);
   position: relative;
   top: 2px;
   margin-right: 5px;
 }
 .langBtn::after {
-  content: url(assets/svgs/downArrow.svg);
+  content: url(/assets/svgs/downArrow.svg);
   position: relative;
   top: 2px;
   margin-left: 5px;
@@ -331,8 +329,8 @@ medium devices */
   .heroSection {
     height: 55vh;
   }
-  .sectionFirst h2 {
-    font-size: 30px;
+  .sectionFirst h2,.heroSection h2 {
+       font-size: 30px;
   }
   .emailSection {
     flex-direction: column;
@@ -360,7 +358,10 @@ medium devices */
     padding: 6% 0 3% 0;
   }
 
- 
+  .sectionFirst {
+    gap: 0;
+    padding: 50px 30px;
+  }
 }
 
 /* media query 
@@ -368,6 +369,10 @@ medium devices */
 small devices */
 
 @media screen and (max-width: 490px) {
+  .heroSection h2 {
+   
+    padding: 0px;
+  }
   .header nav {
     max-width: 85vw;
   }
@@ -384,5 +389,8 @@ small devices */
     text-align: center;
     font-size: 18px;
     padding: 10% 0 8% 0;
+  }
+  footer ul{
+    column-gap: 1rem;
   }
 }
